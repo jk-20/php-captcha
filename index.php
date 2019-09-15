@@ -46,16 +46,19 @@ if(isset($_POST['submit'])){
 </div>
 <br>
 <div class="container justify-content-center">
+
+<div class="col-sm-12">
 <div class="row">
-<div class="col-sm-6">
-<div class="card">
-<h5>CAPTCHA :</h5>
+
 <div class="col-sm-3 bg-dark">
-<p class="text-white"><?php echo $both;?></p>
+<h5 class="text-center text-white">CAPTCHA :</h5>
+<p class="text-white text-center" style="font-size:35px;"><?php echo $both;?></p>
 
 </div>
+<div class="card col-sm-7">
 
 
+<br>
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
 <div class="form-group">
 <label for="">Enter sum </label>
